@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Chedros';
+    src: url('./chedros.ttf');
+} @font-face {
+    font-family: 'Euclid Circular A';
+    src: url('./euclid.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+} body {
+    background: #0c0c0c;
+    color: #ddd;
+    line-height: 1.5;
+    font-family: 'Euclid Circular A' !important;
+} h1, h2, h3 {
+    color: #fff;
+    line-height: 1;
+} img {
+    width: 100%;
+    height: 100%;
+} a, li {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+} .icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+} input, button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+} input:focus-within,
+button:focus-within {
+    outline: 2px dashed #f61566;
+} ::-webkit-scrollbar {
+    display: none;
+} .container {
+    max-width: 1034px;
+    padding: 10px;
+    margin-inline: auto;
+    width: 100%;
+    overflow-x: hidden;
+} h1.title {
+    position: relative;
+    font-size: 1rem;
+    margin: 2rem 0 2rem 0;
+    padding-left: 6px;
+    text-transform: uppercase;
+} h1.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 80%;
+    background: #f61566;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #141417;
+} .logo {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #f61566;
+    font-family: 'chedros' !important;
+} header .menu-open {
+    background: #141417;
+    padding: 10px;
+    border-radius: 8px;
+    color: #f61566;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 300px;
+    background: #141417;
+    z-index: 999;
+    transition: 300ms;
+} .menu.open {
+    right: 0;
+} .menu .search-container {
+    width: 100%;
+} .search {
+    position: relative;
+    background: #141417;
+} .search-container input {
+    width: 100%;
+    background: transparent;
+    color: inherit;
+    height: 50px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #0c0c0c;
+} .menu-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #f61566;
+    background: #141417;
+    border-bottom: 1px solid #0c0c0c;
+}

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "4 Gadgets Under ₹500 That Are Actually Useful!",
+      "tag": "article",
+      "url": "https://www.guvi.in"
+    },{
+        "id": 2,
+        "title": "Iphone 14 just launched! Here's what to know",
+        "tag": "article",
+        "url": "https://www.blogger.com"
+    },{
+        "id": 3,
+        "title": "Android apps to try in 2022",
+        "tag": "code",
+        "url": "https://www.instagram.com"
+      },{
+          "id": 4,
+          "title": "Should you use windows 11 or windows 10?",
+          "tag": "reviews",
+          "url": "https://www.facebook.com"
+      },{
+        "id": 5,
+        "title": "Android vs apple!",
+        "tag": "code",
+        "url": "https://www.microsoft.com"
+      },{
+        "id": 6,
+        "title": "Learn HTML | CSS | JS",
+        "tag": "article",
+        "url": "https://www.microsoft.com"
+      }
+]

@@ -1,0 +1,109 @@
+main {
+    margin-top: 4rem;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+} .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} .banner .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgb(0 0 0 / 50%), rgb(0 0 0 / 80%), rgb(0 0 0 / 100%));
+} .banner .content p {
+    line-height: 1;
+    margin-top: 10px;
+    user-select: none;
+} .banner .content h1 {
+    user-select: none;
+}
+
+.allposts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+} .post {
+    position: relative;
+    cursor: pointer;
+    min-width: 250px;
+    height: 400px;
+    overflow: hidden;
+} .post:hover .content, .post:focus-within .content {
+    bottom: 0;
+    pointer-events: initial;
+} .post img {
+    height: 400px;
+    object-fit: fill;
+} .post .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(0 0 0 / 90%);
+    pointer-events: none;
+    transition: 500ms;
+} .post .content .actionBtns {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 10px;
+} .actionBtns .icon {
+    font-size: 1.1rem;
+    background: #222;
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f61566;
+    transition: 400ms;
+} .post .content h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+} .actionBtns button:hover {
+    background: #f61566;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .top .arrowBtns {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+} .arrowBtns button {
+    padding: 5px;
+    background: #222;
+    color: #f61566;
+    border-radius: 20px 0 0 20px;
+} .arrowBtns button:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 50vh;
+    }
+} @media (max-width: 330px) {
+    .banner .content h1 {
+        font-size: 1rem;
+    } .banner .content p {
+        font-size: 0.8rem;
+    }
+}
